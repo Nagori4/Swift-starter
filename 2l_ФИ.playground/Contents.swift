@@ -1,6 +1,6 @@
 import Foundation
 
-//Задача 1: Функция четное/нечетное
+//Задача 1: Функция четное/нечетное.
 func eNumber (_ num: Int) -> Bool {
     var even: Bool = false
     if num % 2 == 0 {
@@ -18,7 +18,7 @@ if eNumber (3) == true {
 
 
 
-//Задача 2: Функция определяет делится ли число без остатка на 3
+//Задача 2: Функция определяет делится ли число без остатка на 3.
 func num3 (_ num: Int) -> Bool {
     var res: Bool = false
     if num % 3 == 0 {
@@ -35,7 +35,7 @@ if num3 (3) == true {
 
 
 
-//Задача 3: Создаем массив
+//Задача 3: Создаем массив.
 var array1: [Int] = []
 for i in 1...100 {
     array1.append(i)
@@ -44,7 +44,7 @@ for i in 1...100 {
 print (array1)
 
 
-//Задача 4: Удаляем все четные числа и числа, которые не делятся на 3
+//Задача 4: Удаляем все четные числа и числа, которые не делятся на 3.
 for (_, value) in array1.enumerated() {
     if (value % 2) == 0 || (value % 3) == 0 {
         array1.remove(at: array1.firstIndex(of: value)!)
@@ -56,7 +56,7 @@ print (array1)
 
 
 
-//Задача 5: Числа Фибоначчи
+//Задача 5: Числа Фибоначчи.
 func fibonacci () -> [Float80] {
     var fibArray: [Float80] = [1,1]
     var ind = fibArray.count
@@ -71,7 +71,7 @@ print (fibonacci())
 
 
 
-//Задача 6: Массив 100 простых чисел
+//Задача 6: Массив 100 простых чисел.
 func primeNum (_ num: Int) -> Bool {
     if num < 2 {
         return false
